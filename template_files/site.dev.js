@@ -11,33 +11,33 @@
  * to offer multiple easing options
  *
  * TERMS OF USE - jQuery Easing
- *
- * Open source under the BSD License.
- *
+ * 
+ * Open source under the BSD License. 
+ * 
  * Copyright © 2008 George McGinley Smith
  * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without modification,
+ * 
+ * Redistribution and use in source and binary forms, with or without modification, 
  * are permitted provided that the following conditions are met:
- *
- * Redistributions of source code must retain the above copyright notice, this list of
+ * 
+ * Redistributions of source code must retain the above copyright notice, this list of 
  * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list
- * of conditions and the following disclaimer in the documentation and/or other materials
+ * Redistributions in binary form must reproduce the above copyright notice, this list 
+ * of conditions and the following disclaimer in the documentation and/or other materials 
  * provided with the distribution.
- *
- * Neither the name of the author nor the names of contributors may be used to endorse
+ * 
+ * Neither the name of the author nor the names of contributors may be used to endorse 
  * or promote products derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
  * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- * OF THE POSSIBILITY OF SUCH DAMAGE.
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+ * OF THE POSSIBILITY OF SUCH DAMAGE. 
  *
 */
 
@@ -153,7 +153,7 @@ jQuery.extend( jQuery.easing,
 		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
 	},
 	easeInOutBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158;
+		if (s == undefined) s = 1.70158; 
 		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
 		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
 	},
@@ -180,33 +180,33 @@ jQuery.extend( jQuery.easing,
 /*
  *
  * TERMS OF USE - EASING EQUATIONS
- *
- * Open source under the BSD License.
- *
+ * 
+ * Open source under the BSD License. 
+ * 
  * Copyright © 2001 Robert Penner
  * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without modification,
+ * 
+ * Redistribution and use in source and binary forms, with or without modification, 
  * are permitted provided that the following conditions are met:
- *
- * Redistributions of source code must retain the above copyright notice, this list of
+ * 
+ * Redistributions of source code must retain the above copyright notice, this list of 
  * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list
- * of conditions and the following disclaimer in the documentation and/or other materials
+ * Redistributions in binary form must reproduce the above copyright notice, this list 
+ * of conditions and the following disclaimer in the documentation and/or other materials 
  * provided with the distribution.
- *
- * Neither the name of the author nor the names of contributors may be used to endorse
+ * 
+ * Neither the name of the author nor the names of contributors may be used to endorse 
  * or promote products derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
  * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- * OF THE POSSIBILITY OF SUCH DAMAGE.
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+ * OF THE POSSIBILITY OF SUCH DAMAGE. 
  *
  */;;(function (factory)
 {
@@ -1909,10 +1909,10 @@ vjs.findPosition = function(el) {
 vjs.util = {};
 
 /**
- * Merge two options objects,
+ * Merge two options objects, 
  * recursively merging any plain object properties as well.
  * Previously `deepMerge`
- *
+ * 
  * @param  {Object} obj1 Object to override values in
  * @param  {Object} obj2 Overriding object
  * @return {Object}      New object -- obj1 and obj2 will be untouched
@@ -8514,7 +8514,7 @@ vjs.plugin = function(name, init){
  */
 
 (function () {
-
+	
 
 	/**
 	 * Class for managing events.
@@ -9063,7 +9063,7 @@ if ( typeof define === 'function' && define.amd ) {
  * MIT License
  */
 
-( function( window, factory ) {
+( function( window, factory ) { 
   // universal module definition
 
   /*global define: false, module: false, require: false */
@@ -10992,8 +10992,8 @@ UAMS.wpinstance = function(){
 
 UAMS.sources = {
   // Note: style_dir is a variable created by the Wordpress' wp_localize_script in class.uams-scripts.php
-  quicklinks : 'http://web.uams.edu/wp-admin/admin-ajax.php?action=quicklinks',
-  search     : ''//http://uamsonline.com/wp-admin/admin-ajax.php' // UAMS.getBaseUrl() + 'http://uamsonline.com/wp-admin/admin-ajax.php'
+  quicklinks : typeof(style_dir) !== 'undefined' ? style_dir + '/wp-admin/admin-ajax.php?action=quicklinks' : UAMS.getBaseUrl() + 'wp-admin/admin-ajax.php?action=quicklinks',
+  search     : UAMS.getBaseUrl() + 'wp-admin/admin-ajax.php'
 }
 
 // Initialize all components when the DOM is ready
@@ -11027,7 +11027,7 @@ UAMS.initialize = function( $ )
   UAMS.alert = new UAMS.Alert({ after: UAMS.elements.alert, model: new UAMS.Alert.Model() });
 
   // todo: add to separate file
-  $('table').addClass('table table-striped')
+  $('table').addClass('table table-striped').attr( "border", 1 )
 
   $('pre').addClass('prettyprint')
 
@@ -11167,9 +11167,9 @@ UAMS.Search = Backbone.View.extend({
                       '<input id="uams-search-bar" type="search" name="s" value="" autocomplete="off" />'+
                     '</form>'+
 
-                    '<select id="mobile-search-select" class="visible-xs">' +
+                    '<select id="mobile-search-select" class="visible-xs" aria-label="Search Scope">' +
                       '<option value="uams" selected>All of UAMS</option>' +
-                      // '<option value="site">Current site</option>' +
+                      '<option value="site">Current site</option>' +
                     '</select>' +
 
                     '<input type="submit" value="search" class="search" tabindex="0"/>'+
@@ -11177,13 +11177,13 @@ UAMS.Search = Backbone.View.extend({
                     '<div id="search-labels" class="labels hidden-xs">'+
                       '<label class="radio">'+
                         '<input class="radiobtn" type="radio" name="search" value="uams" data-toggle="radio" checked />'+
-                        'All UAMS'+
+                        'All the UAMS'+
                       '</label>'+
 
-                      // '<label class="radio">'+
-//                         '<input class="radiobtn" type="radio" name="search" value="site" data-toggle="radio" />'+
-//                         'Current site'+
-//                       '</label>'+
+                      '<label class="radio">'+
+                        '<input class="radiobtn" type="radio" name="search" value="site" data-toggle="radio" />'+
+                        'Current site'+
+                      '</label>'+
                     '</div>'+
                 '</div>'+
               '</div>',
@@ -11275,6 +11275,7 @@ UAMS.Search = Backbone.View.extend({
   // Determine if the client wants to search current site or the entire UAMS
   submitSearch : function( e )
   {
+    this.$el.find( 'input.radiobtn' ).attr('disabled', 'disabled')
     switch ( this.searchFeature )
     {
       case this.searchFeatures.uams :
@@ -11312,7 +11313,7 @@ UAMS.QuickLinks = Backbone.View.extend({
     template : '<nav id="quicklinks" role="navigation" aria-label="quick links" aria-hidden="true">' +
                         '<ul id="big-links">' +
                             '<% _.each( links, function( link ) { %> ' +
-                                '<% if (link.classes.join().indexOf("big") !== -1 ) { %>' +
+                                '<% if (link.classes.indexOf("big") !== -1 ) { %>' +
                                     '<li>' +
                                         '<span class="<%= link.classes.join(" ") %>"></span>' +
                                         '<a href="<%= link.url %>" tabindex="-1"><%= link.title %></a>' +
@@ -11323,7 +11324,7 @@ UAMS.QuickLinks = Backbone.View.extend({
                         '<h3>Helpful Links</h3>' +
                         '<ul id="little-links">' +
                             '<% _.each( links, function( link ) { %> '+
-                                '<% if (( link.classes.join().indexOf("big") == -1) && ( link.classes.join().indexOf("social") == -1)) { %>' +
+                                '<% if (( link.classes.indexOf("big") == -1) && ( link.classes.indexOf("social") == -1)) { %>' +
                                     '<li>' +
                                         '<span class="<%= link.classes.join(" ") %>"></span>' +
                                         '<a href="<%= link.url %>" tabindex="-1"><%= link.title %></a>' +
@@ -11334,7 +11335,7 @@ UAMS.QuickLinks = Backbone.View.extend({
                         '<h4>Social</h4>' +
                         '<ul id="social">' +
                             '<% _.each( links, function( link ) { %> '+
-                                '<% if ( link.classes.join().indexOf("social") !== -1) { %>' +
+                                '<% if ( link.classes.indexOf("social") !== -1) { %>' +
                                     '<li>' +
                                         '<a href="<%= link.url %>" tabindex="-1"><span class="<%= link.classes.join(" ") %>"></span> <%= link.title %></a>' +
                                     '</li>' +
@@ -11372,8 +11373,8 @@ UAMS.QuickLinks = Backbone.View.extend({
 
     render : function(  )
     {
-        this.quicklinks = $( _.template( this.template )({ links : this.defaultLinks ? this.defaultLinks : this.links.toJSON() }) );
-        this.$container = $(this.container);
+        this.quicklinks = jQuery( _.template( this.template )({ links : this.defaultLinks ? this.defaultLinks : this.links.toJSON() }) );
+        this.$container = jQuery(this.container);
         this.$container.prepend( this.quicklinks )
         this.$el.attr( 'aria-controls', 'quicklinks' ).attr( 'aria-owns', 'quicklinks' )
         UAMS.$body.on( 'keydown', '#quicklinks a:first', this.inner_keydown )
@@ -11423,14 +11424,14 @@ UAMS.QuickLinks = Backbone.View.extend({
         if ( this.open ) {
             this.$el.attr('aria-label', 'Close quick links');
             this.quicklinks.find('a').attr( 'tabindex', 0 ).first().focus()
-           $('#uams-container-inner').attr('aria-hidden', true);
-           $('.screen-reader-shortcut').attr('aria-hidden', true)
+           jQuery('#uams-container-inner').attr('aria-hidden', true);
+           jQuery('.screen-reader-shortcut').attr('aria-hidden', true)
         } else {
             this.$el.attr('aria-label', 'Open quick links');
             this.quicklinks.find('a').attr( 'tabindex', -1 )
             this.$el.focus()
-           $('#uams-container-inner').attr('aria-hidden', false);
-           $('.screen-reader-shortcut').attr('aria-hidden', false);
+           jQuery('#uams-container-inner').attr('aria-hidden', false);
+           jQuery('.screen-reader-shortcut').attr('aria-hidden', false);
         }
     },
 
@@ -11461,6 +11462,10 @@ UAMS.QuickLinks.Collection = Backbone.Collection.extend({
        "title": "Library",
        "url": "http:\/\/library.uams.edu\/",
        "classes": ["i-books-1 big"]
+    }, {
+       "title": "Profiles",
+       "url": "https:\/\/uams-triprofiles.uams.edu\/profiles\/search\/",
+       "classes": ["i-intranet big"]
    }, {
        "title": "UAMS Bookstore",
        "url": "http:\/\/library.uams.edu\/library-services\/bookstore\/",
@@ -12345,7 +12350,11 @@ UAMS.Radio = Backbone.View.extend({
 
     this.name   = this.$el.attr( 'name' )
 
-    this.setElement( this.$el.closest('label') )
+    if ( this.$el.closest('.gform_wrapper').length > 0 ) {
+    	this.setElement( this.$el.parent() )
+    } else {
+    	this.setElement( this.$el.closest('label') )
+    }
 
     this.setState()
   },
@@ -12462,35 +12471,32 @@ UAMS.Dropdowns = Backbone.View.extend({
 
   wrapChildren : function( element )
   {
-    if ( $(element).find('li').length > this.chunkSize )
-        _.each( _.groupBy( $( element ).find('li'), this.chunk ), this.wrap )
+    if ( jQuery(element).find('li').length > this.chunkSize )
+        _.each( _.groupBy( jQuery( element ).find('li'), this.chunk ), this.wrap )
   },
 
   wrapMega : function( element )
   {
  	//if ( $(element).find('li').not('.sub-menu li') )
-    	_.each( $( element ).find('li').not('.sub-menu li'), this.wrap )
+    	_.each( jQuery( element ).find('li').not('.sub-menu li'), this.wrap )
   },
 
   wrap : function( elements )
   {
-      $( elements ).wrapAll( this.menuBlock )
+      jQuery( elements ).wrapAll( this.menuBlock )
   },
 
   // todo: tidy up the math / variables
   positionSubmenu : function( event )
   {
-    var $el = $( event.currentTarget )
+    var $el = jQuery( event.currentTarget )
       , position = $el.position()
       , menublock = $el.find('.menu-block')
-      , shift = ( this.menuBlockWidth * ( menublock.length / 2 ) ) + position.left // Double counting so /2
-      //console.log (menublock)
+      , shift = ( this.menuBlockWidth * ( menublock.length ) ) + position.left
       , left = shift > UAMS.$window.width() ? $el.outerWidth() + position.left - ( menublock.length * this.menuBlockWidth ) : position.left
-	  //console.log (left)
+
       if (left < 0)  // Make sure the left is not negative margin.  If so, center the menu
-    	left = ( UAMS.$window.width() - this.menuBlockWidth * ( menublock.length / 2 )) * 0.5 // Double counting so /2
-      //console.log (UAMS.$window.width() + ' ' + this.menuBlockWidth)
-      //console.log (left)
+    	left = ( UAMS.$window.width() - this.menuBlockWidth * ( menublock.length )) * 0.5
 
     $el.find('ul').css( { top : position.top + 48, left: left })
   },
@@ -12503,8 +12509,8 @@ UAMS.Dropdowns = Backbone.View.extend({
       case this.keys.enter :
       case this.keys.down  :
 
-        $(e.currentTarget).attr('aria-expanded', 'true');
-        this.currentSubMenu = $(e.currentTarget).siblings('ul')
+        jQuery(e.currentTarget).attr('aria-expanded', 'true');
+        this.currentSubMenu = jQuery(e.currentTarget).siblings('ul')
         this.currentSubMenuAnchors = this.currentSubMenu.find('a')
 
         this.currentSubMenu
@@ -12517,16 +12523,16 @@ UAMS.Dropdowns = Backbone.View.extend({
         return false
 
       case this.keys.left :
-        $(e.currentTarget).parent().prev().children('a').first().focus()
+        jQuery(e.currentTarget).parent().prev().children('a').first().focus()
         return false
 
 
       case this.keys.right :
-        $(e.currentTarget).parent().next().children('a').first().focus()
+        jQuery(e.currentTarget).parent().next().children('a').first().focus()
         return false
 
       case this.keys.spacebar:
-        window.location.href = $(e.currentTarget).attr('href')
+        window.location.href = jQuery(e.currentTarget).attr('href')
         return false;
 
     }
@@ -12572,7 +12578,7 @@ UAMS.Dropdowns = Backbone.View.extend({
 
       case this.keys.spacebar:
       case this.keys.enter:
-        window.location.href = $(e.currentTarget).attr('href')
+        window.location.href = jQuery(e.currentTarget).attr('href')
         return false;
 
       case this.keys.esc:
@@ -12996,7 +13002,7 @@ UAMS.Select = Backbone.View.extend({
                     '<div></div>' +
                     '<div class="wrapper" style="width:<%= width %>px; margin-top:-<%= height/2 %>px; margin-left:-<%= width/2 %>px;">' +
                      '<span class="close"> Close</span>' +
-                     '<iframe width="<%= width %>" height="<%= height %>" src="<%= src %>" frameborder="0" allowfullscreen></iframe>' +
+                     '<iframe width="<%= width %>" height="<%= height %>" src="<%= src %>" style="border:0;" allowfullscreen="" title="<%= caption %>"></iframe>' +
                      '<p><%= caption %></p>' +
                      '<p><%= credit %></p>' +
                    '</div>' +
