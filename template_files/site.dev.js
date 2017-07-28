@@ -10993,8 +10993,8 @@ UAMS.wpinstance = function(){
 
 UAMS.sources = {
   // Note: style_dir is a variable created by the Wordpress' wp_localize_script in class.uams-scripts.php
-  quicklinks : typeof(style_dir) !== 'undefined' ? style_dir + '/wp-admin/admin-ajax.php?action=quicklinks' : UAMS.getBaseUrl() + 'wp-admin/admin-ajax.php?action=quicklinks',
-  search     : UAMS.getBaseUrl() + 'wp-admin/admin-ajax.php'
+  quicklinks : 'http://web.uams.edu/wp-admin/admin-ajax.php?action=quicklinks', //: UAMS.getBaseUrl() + 'wp-admin/admin-ajax.php?action=quicklinks',
+  search     : ''//http://uamsonline.com/wp-admin/admin-ajax.php' // UAMS.getBaseUrl() + '/wp-admin/admin-ajax.php'
 }
 
 // Initialize all components when the DOM is ready
